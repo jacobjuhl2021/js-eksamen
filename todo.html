@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript eksamensprojekt</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="js/todo.js"></script>
 </head>
 <body>
     <header>
@@ -19,12 +20,11 @@
         </nav>
     </header>
 
-    <main>
-        <!-- Her kan de studerende tilføje deres egne noter -->
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Studerende Samfund</p>
-    </footer>
+    <form id="todoForm">
+        <label for="todo">Add Todo:</label>
+        <input type="text" id="todo" name="todo">
+        <button type="submit">Add</button>
+    </form>
+    <ul id="todoList"></ul>
 </body>
 </html>
