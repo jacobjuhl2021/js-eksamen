@@ -1,12 +1,12 @@
-// funcion - array - for loop - if statement - DOM manipulation - local storage
+// funcion - array - for loop - if statement - DOM manipulation - local storage - dato
+
+
 
 // Hent gemte værdier fra localStorage ved indlæsning af siden
 document.getElementById("weight").value = localStorage.getItem("weight") || "";
 document.getElementById("height").value = localStorage.getItem("height") || "";
-// Hvis der er gemte BMI-oplysninger, vis dem på siden
-//if (localStorage.getItem("bmiResult") && localStorage.getItem("bmiCategory")) {
-    document.getElementById("result").textContent = "Your BMI is: " + localStorage.getItem("bmiResult") + ". This is considered: " + localStorage.getItem("bmiCategory");
-//}
+document.getElementById("result").textContent = "Your BMI is: " + localStorage.getItem("bmiResult") + ". This is considered: " + localStorage.getItem("bmiCategory");
+document.getElementById("lastDate").textContent = "Last calculation: " + localStorage.getItem("lastCalculationTime") || "";
 
 function calculateBMI() {
     var weight = parseFloat(document.getElementById("weight").value);
@@ -41,4 +41,7 @@ function calculateBMI() {
     //localStorage.setItem("height", height * 100); // Gem højde i cm
     localStorage.setItem("bmiResult", bmi.toFixed(2));
     localStorage.setItem("bmiCategory", bmiCategory);
+
+    var currentTime = new Date();
+    localStorage.setItem("lastCalculationTime", currentTime.toLocaleString());
 }
