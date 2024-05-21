@@ -1,6 +1,6 @@
 // funcion - array - for loop - if statement - DOM manipulation - local storage - dato
 
-//variabler = let + const
+// variabler = let + const
 // datatyper = string, number
 // loops = for
 // betingelser = if
