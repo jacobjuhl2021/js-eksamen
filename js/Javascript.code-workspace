@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../../developer/2.sem/Javascript"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Javascript"
+	}
+}
