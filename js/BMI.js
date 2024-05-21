@@ -27,7 +27,7 @@ function calculateBMI() {
         { range: [30, 34.9], label: "Obesity" },
         { range: [35, 39.9], label: "Severe obesity" },
         { range: [40, Infinity], label: "Extreme obesity" }
-    ];
+    ]; 
 
     for (let i = 0; i < categories.length; i++) {
         let range = categories[i].range;
